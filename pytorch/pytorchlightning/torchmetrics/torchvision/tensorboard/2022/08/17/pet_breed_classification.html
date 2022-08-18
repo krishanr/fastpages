@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality." />
 <meta property="og:description" content="An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality." />
-<link rel="canonical" href="https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/16/pet_breed_classification.html" />
-<meta property="og:url" content="https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/16/pet_breed_classification.html" />
+<link rel="canonical" href="https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/17/pet_breed_classification.html" />
+<meta property="og:url" content="https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/17/pet_breed_classification.html" />
 <meta property="og:site_name" content="Krishan Rajaratnam’s blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-16T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-08-17T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Pet Breed Classification" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/16/pet_breed_classification.html"},"url":"https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/16/pet_breed_classification.html","@type":"BlogPosting","headline":"Pet Breed Classification","dateModified":"2022-08-16T00:00:00-05:00","datePublished":"2022-08-16T00:00:00-05:00","description":"An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality.","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/17/pet_breed_classification.html"},"url":"https://krishanr.github.io/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/17/pet_breed_classification.html","@type":"BlogPosting","headline":"Pet Breed Classification","dateModified":"2022-08-17T00:00:00-05:00","datePublished":"2022-08-17T00:00:00-05:00","description":"An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://krishanr.github.io/fastpages/feed.xml" title="Krishan Rajaratnam's blog" /><link rel="icon" href="/fastpages/images/favicon.svg"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -89,8 +89,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Pet Breed Classification</h1><p class="page-description">An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-16T00:00:00-05:00" itemprop="datePublished">
-        Aug 16, 2022
+    <h1 class="post-title p-name" itemprop="name headline">Pet Breed Classification</h1><p class="page-description">An end-to-end workflow for image classification on the Oxford IIIT pet dataset using PyTorch, PyTorch Lightning, Torchmetrics and Tensorboard. This notebook trains state of the art image classification models on the Oxford IIIT pet dataset, and shows how to use torchmetrics to measure their quality.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-17T00:00:00-05:00" itemprop="datePublished">
+        Aug 17, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -849,10 +849,10 @@ INFO:pytorch_lightning.utilities.rank_zero:HPU available: False, using: 0 HPUs
 
 
 
-<div id="d5a3d228-52e3-4fcc-ab66-02cd76f5860f"></div>
+<div id="4b890649-3959-4bfc-b8b0-9648ae8247c1"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d5a3d228-52e3-4fcc-ab66-02cd76f5860f');
+var element = $('#4b890649-3959-4bfc-b8b0-9648ae8247c1');
 
         (async () => {
             const url = new URL(await google.colab.kernel.proxyPort(6006, {'cache': true}));
@@ -1168,7 +1168,7 @@ INFO:pytorch_lightning.utilities.rank_zero:`Trainer.fit` stopped: `max_epochs=12
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/16/pet_breed_classification.html" hidden></a>
+</script><a class="u-url" href="/fastpages/pytorch/pytorchlightning/torchmetrics/torchvision/tensorboard/2022/08/17/pet_breed_classification.html" hidden></a>
 </article>
 
       </div>
