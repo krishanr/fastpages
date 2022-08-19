@@ -190,7 +190,7 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next the Dockerfile will have to be built and pushed to Dockerhub, before it can be used with paperspace.</p>
 <p>To build the Dockerfile, just run</p>
-<div class="highlight"><pre><span></span>docker build -t k2rajara/paperspace:3.0
+<div class="highlight"><pre><span></span>docker build -t k2rajara/paperspace:3.0 .
 </pre></div>
 <p>for example, in the same directory as the Dockerfile.</p>
 <p>In the above code, 'k2rajara/paperspace' is the <a href="https://hub.docker.com/r/k2rajara/paperspace">container name</a> on Dockerhub.  To create your own repository on Dockerhub, follow the instructions <a href="https://docs.docker.com/docker-hub/">here</a>. Then push your image there. Once this is complete, its details can be added to the advanced section:</p>
