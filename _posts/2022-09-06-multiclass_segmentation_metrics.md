@@ -38,6 +38,7 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install pytorch-lightning
 <span class="o">!</span>pip install -U git+https://github.com/qubvel/segmentation_models.pytorch
 <span class="o">!</span>pip install seaborn
+<span class="o">!</span>pip install watermark
 </pre></div>
 
     </div>
@@ -389,6 +390,43 @@ while the $F1$ score with the weighted average plus <code>mdmc_average</code> gl
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+<span class="o">%</span><span class="k">watermark</span> --iversions
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>seaborn                    : 0.11.2
+matplotlib                 : 3.5.1
+segmentation_models_pytorch: 0.3.0
+torch                      : 1.12.0
+sklearn                    : 1.0.2
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>{{ 'This fact is discussed further <a href="https://stats.stackexchange.com/questions/273537/f1-dice-score-vs-iou">here</a>' | fndetail: 1 }}</p>

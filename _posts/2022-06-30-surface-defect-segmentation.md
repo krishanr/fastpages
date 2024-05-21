@@ -42,10 +42,11 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!pip install torch torchvision </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install torch torchvision 
 <span class="o">!</span>pip install -U git+https://github.com/qubvel/segmentation_models.pytorch
 <span class="o">!</span>pip install pytorch-lightning
 <span class="o">!</span>pip install mlflow
+<span class="o">!</span>pip install watermark
 </pre></div>
 
     </div>
@@ -1309,6 +1310,48 @@ the dataset is highly imbalanced.</p>
 >
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+<span class="o">%</span><span class="k">watermark</span> --iversions -v
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python implementation: CPython
+Python version       : 3.9.7
+IPython version      : 7.31.0
+
+torch                      : 1.12.0
+pytorch_lightning          : 1.6.4
+numpy                      : 1.19.5
+torchvision                : 0.13.0
+PIL                        : 8.4.0
+segmentation_models_pytorch: 0.3.0
+
+</pre>
+</div>
 </div>
 
 </div>

@@ -44,6 +44,7 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install pytorch_lightning
 <span class="o">!</span>pip install -U git+https://github.com/qubvel/segmentation_models.pytorch
+<span class="o">!</span>pip install watermark
 </pre></div>
 
     </div>
@@ -90,7 +91,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:pytorch_lightning.utilities.seed:Global seed set to 7
+<pre>Global seed set to 7
 </pre>
 </div>
 </div>
@@ -807,10 +808,10 @@ because of the mild class imbalance.</p>
 
 
 
-<div id="c710e19a-71f4-4f3a-8c2f-bb43caecf13b"></div>
+<div id="276722ee-1866-4224-8379-2772ef04bc6c"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c710e19a-71f4-4f3a-8c2f-bb43caecf13b');
+var element = $('#276722ee-1866-4224-8379-2772ef04bc6c');
 
         (async () => {
             const url = new URL(await google.colab.kernel.proxyPort(6006, {'cache': true}));
@@ -1198,6 +1199,47 @@ INFO:pytorch_lightning.utilities.rank_zero:`Trainer.fit` stopped: `max_epochs=12
 >
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+<span class="o">%</span><span class="k">watermark</span> --iversions -v
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python implementation: CPython
+Python version       : 3.9.7
+IPython version      : 7.31.0
+
+segmentation_models_pytorch: 0.3.0
+matplotlib                 : 3.5.1
+torchvision                : 0.13.0
+torch                      : 1.12.0
+numpy                      : 1.19.5
+
+</pre>
+</div>
 </div>
 
 </div>

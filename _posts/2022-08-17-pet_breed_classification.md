@@ -44,6 +44,7 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install pytorch-lightning
 <span class="o">!</span>pip install lightning-bolts
 <span class="o">!</span>pip install seaborn
+<span class="o">!</span>pip install watermark
 </pre></div>
 
     </div>
@@ -87,7 +88,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:pytorch_lightning.utilities.seed:Global seed set to 7
+<pre>Global seed set to 7
 </pre>
 </div>
 </div>
@@ -719,10 +720,10 @@ INFO:pytorch_lightning.utilities.rank_zero:HPU available: False, using: 0 HPUs
 
 
 
-<div id="a9f4845a-6af3-41aa-b437-f0ecd6065543"></div>
+<div id="6abf79b6-cca2-438a-bb87-1098b00d8ae0"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#a9f4845a-6af3-41aa-b437-f0ecd6065543');
+var element = $('#6abf79b6-cca2-438a-bb87-1098b00d8ae0');
 
         (async () => {
             const url = new URL(await google.colab.kernel.proxyPort(6006, {'cache': true}));
@@ -1013,6 +1014,47 @@ INFO:pytorch_lightning.utilities.rank_zero:`Trainer.fit` stopped: `max_epochs=12
 >
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+<span class="o">%</span><span class="k">watermark</span> --iversions -v
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python implementation: CPython
+Python version       : 3.9.7
+IPython version      : 7.31.0
+
+torchvision: 0.13.0
+matplotlib : 3.5.1
+torch      : 1.12.0
+pandas     : 1.3.5
+numpy      : 1.19.5
+
+</pre>
+</div>
 </div>
 
 </div>
