@@ -102,7 +102,7 @@ plugins:
 paginate: 15
 paginate_path: /page:num/
 
-remote_theme: jekyll/minima@296bf6b872b8450529bee1e48d0ca9be200a4be5
+remote_theme: jekyll/minima@<296bf6b872b8450529bee1e48d0ca9be200a4be5
 
 titles_from_headings:
   enabled:     true
