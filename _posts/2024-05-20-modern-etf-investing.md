@@ -2,10 +2,10 @@
 keywords: fastai
 description: A brief introduction to exchange traded fund (ETF) investing for Canadian investors.
 title: Modern ETF Investing
-toc: true 
-badges: true
+toc: false 
+badges: false
 comments: true
-categories: [statistics]
+categories: [investing]
 nb_path: _notebooks/2024-05-20-modern-etf-investing.ipynb
 layout: notebook
 ---
